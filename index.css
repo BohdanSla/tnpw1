@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff7d40;
+    color: white;
+    font-family: Candara, arial, sans-serif;
+    
+}
+
+header {
+    top: 0;
+    height: 5rem;
+    padding: 1rem;
+    background-color: white;
+    color: #ff6b21;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    margin: 0.25em 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+nav ul {
+    width: 100%;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding:1rem 0;
+    font-weight: bold;
+}
+nav ul li a{
+    color:#000000;
+    text-decoration: none;
+    background:  no-repeat 0 100%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2.5px;
+    transition: background-size .15s ease-in;
+    padding-bottom: 5px;
+}
+nav ul li a:hover {
+    background-size: 100% 2.5px;
+}
+main {
+    width: 60%;
+    margin:1em auto;
+
+}
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+main form input,textarea {
+    border: 0.5px solid #a9a9ff;
+    border-radius: 2px;
+    color: #545454;
+    width: 50%;
+    padding: 0.5em;
+}
+textarea {
+    height: 10em;
+}
+main form input:focus,textarea:focus {
+    outline: 2px solid #7777ff;
+}
+/* main form input:focus,textarea:focus {
+
+} */
+main form label {
+    color:black;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+main section div strong {
+    color: black;
+}
+main form input[type=submit]:hover {
+    cursor: pointer;
+}
+main form input[type=submit] {
+    background-color: #8585ff;
+    border-radius: 2px;
+    border: rgba(255, 255, 255, 0.368) 0.1px solid;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 7rem;
+    letter-spacing: 1px;
+}
+main div.osoby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+main div.osoby img {
+    width: 16em;
+    height: 10em;
+
+}
+main section p {
+    margin: 0;
+}
+h3 {
+    color: #000000;
+}
+strong {
+    font-size: 1.5em;
+}
+#vasEmail {
+    margin-bottom: 1.5em;
+}
+main > section
+main section > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main section > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+.osoba {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.osoba a {
+    text-decoration-line: underline;
+    color: white;
+}
+.kontakty {
+    margin-left: 5%;
+}
+.podminky {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    margin-top: 1em;
+}
+.podminky label {
+    color: rgb(77, 77, 77);
+    margin: 0;
+    font-size: smaller;
+}
+.podminka {
+    display: flex;
+    align-items: start;
+}
+.podminka input {
+    width:1em;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5500;
+    text-align: center;
+}
+table,td,th  {
+    border-collapse: collapse;
+    border: 2px solid rgb(62, 62, 62);
+    text-align: center;
+    padding: 0.3em;
+}
+table {
+    margin-top: 1em;
+}
+
+#googleMap {
+    z-index: -1;
+}
+
+.fotogalerie img {
+    width: 25em;
+    height: 17em;
+}
+.fotogalerie img:hover {
+    cursor: pointer;
+}
+main > p {
+    width: 80%;
+}
+@media screen and (max-width: 900px) {
+    nav {
+        width: calc(67% - 4em);
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    main section > div:nth-child(3) {
+        display: flex;
+        align-items: center;
+    }
+    main > p  {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .podminky {
+        height: unset;
+    }
+    .podminka {
+        margin-top: 1em;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;     
+    }
+    strong {
+        text-align: center;
+    }
+    .fotogalerie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fotogalerie img {
+        margin-top: 1em;
+    }
+    .kontakty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    form {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    main form input, textarea {
+        width: 80%;
+    }
+    main form input[type=submit] {
+        width: 80%;
+    }
+    main div.osoby {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2, .kontakt {
+        text-align: center;
+    }
+    h1 {
+    margin: 0;
+    text-align: center;
+    }
+    nav {
+        width: unset;
+        height: 15vh;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header {
+        flex-direction: column;
+        height: unset;
+    }
+    nav ul li {
+        margin: 0.2em 0;
+        text-align: center;
+    }
+}
